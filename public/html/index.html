@@ -41,9 +41,18 @@
     <div id="toast">
         Workout Added Successfully!
     </div>
-    <script src="/api.js"></script>
-    <script src="/workout.js"></script>
-    <script src="../../public/js/service-worker.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/workout.js"></script>
+    <!-- <script>
+        if ("serviceWorker" in navigator) {
+          window.addEventListener("load", () => {
+            navigator.serviceWorker.register("../service-worker.js").then(reg => {
+              console.log("We found your service worker file!", reg);
+            });
+          });
+        }
+      </script> -->
+    <!-- <script src="../../"></script> -->
 </body>
 
 </html>

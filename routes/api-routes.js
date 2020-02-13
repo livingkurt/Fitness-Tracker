@@ -36,6 +36,7 @@ module.exports = function (app) {
     app.get("/api/workouts/range", function ({ body }, res) {
         console.log("Range")
         db.Workout.find({})
+            .populate("workout")
             .then((data) => {
                 // console.log(data);
                 res.json(data);
