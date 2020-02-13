@@ -5,18 +5,6 @@ const db = require("../models/index");
 
 module.exports = function (app) {
 
-    // app.get("/api/workouts/:id", function (req, res) {
-    //     const workout_id = req.params.id
-    //     console.log(workout_id)
-    //     db.Workout.findById(workout_id)
-    //         .then((dbWorkout) => {
-    //             console.log(dbWorkout);
-    //             res.json(dbWorkout);
-    //         }).catch((err) => {
-    //             console.log(err);
-    //             res.json(err);
-    //         });
-    // });
 
     app.get("/api/workouts", function ({ body }, res) {
         console.log("Complete")
@@ -50,16 +38,11 @@ module.exports = function (app) {
     });
 
     app.put("/api/workouts/:id", function ({ body }, res) {
-        // const workout_id = body
-        // console.log(body)
+        console.log("Put")
         db.Workout.findByIdAndUpdate(body, {
             $set: {
-                type: body.type,
-                name: body.name,
-                weight: body.weight,
-                sets: body.sets,
-                reps: body.reps,
-                duration: body.duration
+                day: body.day,
+                exercise: body.exercise
             }
         }, { new: true })
             .then(dbWorkout => {
@@ -72,18 +55,8 @@ module.exports = function (app) {
     });
 
     app.post("/api/workouts", function ({ body }, res) {
-        // console.log(body)
-        db.Workout.create(body, {
-            // .then(({ _id }) => db.Workout.findOneAndUpdate({}, {
-            $push: {
-                type: body.type,
-                name: body.name,
-                weight: body.weight,
-                sets: body.sets,
-                reps: body.reps,
-                duration: body.duration
-            }
-        }, { new: true })
+        console.log("Post")
+        db.Workout.create(body)
             .then(db_workout => {
                 res.json(db_workout);
             })
