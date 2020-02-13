@@ -1,7 +1,7 @@
-const exercise_view = require("../views/exercise_view");
-const index_view = require("../views/index_view");
-const stats_view = require("../views/stats_view");
-const main_layout = require("../views/layouts/main_layout");
+const exercise_view = require("../public/views/exercise_view");
+const index_view = require("../public/views/index_view");
+const stats_view = require("../public/views/stats_view");
+const main_layout = require("../public/views/layouts/main_layout");
 
 module.exports = function (app) {
 

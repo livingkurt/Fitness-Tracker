@@ -18,8 +18,19 @@ ${body}
     <script src="${api_link}"></script>
     <script src="${workout_link}"></script>
     <script src="${index_link}"></script>
+    
+    
 </body>
 
-</html>
-`;
+</html>`;
 };
+
+{/* <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./public/views/service-worker.js").then(reg => {
+            console.log("We found your service worker file!", reg);
+          });
+        });
+      }
+    </script> */}
