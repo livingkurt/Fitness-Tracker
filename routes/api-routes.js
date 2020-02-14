@@ -1,6 +1,3 @@
-// Requiring our models and passport as we've configured it
-// var user = require("../models/user");
-// var workout = require("../models/workout");
 const db = require("../models/index");
 
 module.exports = function (app) {
