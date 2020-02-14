@@ -2,6 +2,7 @@ module.exports = function(){
     return `
     <nav>
         <a href="/">Fitness Tracker</a>
+        <label>|</label>
         <a href="/stats">Dashboard</a>
     </nav>
     <div class="wrapper workout">

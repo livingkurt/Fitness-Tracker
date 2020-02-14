@@ -10,6 +10,8 @@ html,
 body,
 .wrapper {
   height: 100%;
+  /* background: rgb(171,129,65); */
+    background: linear-gradient(0deg, rgba(171,129,65,1) 36%, rgba(62,160,160,1) 100%);
 }
 
 body {
@@ -17,7 +19,7 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+    background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
   height: 80px;
   padding: 10px;
@@ -30,8 +32,13 @@ a:hover,
 a:active,
 a:visited {
   text-decoration: none;
+  /* margin-right: 15px; */
   color: inherit;
+  /* font-weight: bold; */
+  font-size: 20px;
+  margin-left: 10px;
 }
+
 
 header {
   height: 150px;
@@ -42,6 +49,7 @@ header {
 
 header h1 {
   transform: skewX(-2deg);
+  color: white;
 }
 
 select {
@@ -103,7 +111,14 @@ input {
 .card.m-auto,
 .m-auto {
   margin: 0 auto;
+  border-radius: 20px;
   width: 500px;
+}
+
+.mt {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
 }
 
 form .workout-type,
@@ -111,6 +126,11 @@ form .cardio-form div,
 form .resistance-form div {
   display: flex;
   margin-top: 30px;
+}
+
+label {
+    margin: 0px 9px 0px 20px;
+
 }
 
 form label {
@@ -407,11 +427,28 @@ form > button {
   padding: 10px;
 }
 
+.ui.positive.button {
+    background-color: rgb(171, 129, 65);
+    border-radius: 0px 0px 20px 0px;
+}
+
+.ui.positive.button:hover {
+    background-color: rgb(123, 92, 46);
+}
+
+
+
 .buttons .ui.button:first-child {
+    background-color: rgb(62, 160, 160);
+    border-radius: 0px 0px 0px 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
+.buttons .ui.button:first-child:hover {
+    background-color: rgb(46, 117, 117);
+} 
 
 .buttons .ui.button:nth-child(2) {
   border-top-left-radius: 0;
