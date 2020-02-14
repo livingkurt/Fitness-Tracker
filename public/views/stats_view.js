@@ -23,7 +23,3 @@ module.exports = function(){
         </div>
     </div>`
 };
-
-{/* <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="../js/api.js"></script>
-    <script src="../js/stats.js"></script> */}

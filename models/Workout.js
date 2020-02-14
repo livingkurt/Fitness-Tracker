@@ -1,4 +1,4 @@
-// Call Dependencies
+// Import Mongoose
 const mongoose = require("mongoose");
 // Assign Schema to a variable
 const Schema = mongoose.Schema;

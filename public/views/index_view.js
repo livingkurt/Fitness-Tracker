@@ -33,7 +33,3 @@ module.exports = function(){
     
 `
 };
-
-{/* <script src="../js/api.js"></script>
-    <script src="../js/workout.js"></script>
-    <script src="../js/index.js"></script> */}

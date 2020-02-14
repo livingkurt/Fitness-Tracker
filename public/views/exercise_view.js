@@ -73,6 +73,3 @@ module.exports = function(){
     </div>
     `
 };
-
-{/* <script src="../js/api.js"></script>
-    <script src="../js/exercise.js"></script> */}

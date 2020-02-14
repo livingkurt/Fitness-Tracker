@@ -1,4 +1,4 @@
-// Call Dependencies
+// Import your models
 const db = require("../models/index");
 
 // Export API Routes to Express
