@@ -8,7 +8,8 @@ const WorkoutSchema = new Schema({
         type: Date,
         default: Date.now()
     },
-    exercises: [Object]
+    exercises: [Object],
+    totalDuration: Number
 
 });
 

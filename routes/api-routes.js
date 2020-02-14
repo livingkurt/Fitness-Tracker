@@ -10,8 +10,6 @@ module.exports = function (app) {
         console.log("Complete")
         const request = await db.Workout.find({})
             res.send(request)
-
-
     });
 
     app.get("/api/workouts/range", async ({ body }, res) => {
