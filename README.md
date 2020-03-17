@@ -2,7 +2,7 @@
 
 Deployable Link:
 
-https://young-ridge-72322.herokuapp.com/?id=5e46ab0462904600179ca213
+https://young-ridge-72322.herokuapp.com/
 
 ## About The Project
 
